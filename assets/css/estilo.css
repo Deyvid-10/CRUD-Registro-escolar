@@ -1,0 +1,469 @@
+html
+{
+    background-image: url("../img/fondo.png");
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+body
+{
+    background-color: rgb(230, 243, 255);
+    width: 75%;
+    border-radius: 13px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(43, 43, 43, 0.5);
+    padding: 20px 0px;
+}
+
+/* estilo para pantalla de inicio */
+
+.contenedor-logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.logo
+{
+    width: 20%;
+}
+
+.contenedor-boton-agregar
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid rgb(41, 41, 41);
+    padding: 10px 30px;
+    margin: 8px;
+    margin-top: 20px;
+
+}
+
+.titulo-inicio
+{
+    margin: 0;
+}
+
+.boton_agregar
+{
+    width: 40px;
+    text-decoration: none;
+    color: #2ddfa1;
+}
+
+.boton_agregar:hover
+{
+    color: #5a5d5c;
+    transition: color 0.4s;
+}
+
+.boton_fantasma
+{
+    width: 40px;
+    text-decoration: none;
+    color: rgb(230, 243, 255);
+}
+
+.contenedor-listado
+{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.contenedor-elemento-listado
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #8e949c;
+    margin-top: 10px;
+}
+
+.elemento_listado
+{
+    text-decoration: none;
+    color: black;
+}
+
+.elemento_listado:hover
+{
+    color: #7b7b7b;
+    transition: color 0.4s;
+}
+
+li
+{
+    font-size: 22px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+}
+
+.boton_editar
+{
+
+    width: 25px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #60A3D9;
+}
+
+.boton_editar:hover
+{
+    color: #5a5d5c;
+    transition: color 0.4s;
+}
+
+.boton_eliminar
+{
+    width: 25px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(250, 41, 41);
+}
+
+.boton_eliminar:hover
+{
+    color: #5a5d5c;
+    transition: color 0.4s;
+    cursor: pointer;
+}
+
+h2
+{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* texto y botones generales */
+
+.regresar
+{
+    margin-left: 5px;
+    width: 30px;
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.regresar:hover
+{
+    color: #5a5d5c
+}
+
+.titulo
+{
+    text-align: center;
+    border-top: solid rgb(41, 41, 41);
+    padding-top: 10px;
+    margin: 8px;
+    margin-top: 20px;
+}
+
+.sub-titulo
+{
+    margin: 0 15px;
+    font-weight: normal;
+}
+
+.sub-titulo-2
+{
+    margin: 0 15px;
+    font-weight: normal;
+    color: tomato;
+}
+
+.contenedor-sub-titulo
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#confirmacion
+{
+    font-size: 18px;
+    text-align: center;
+    color: tomato;
+}
+
+/* estilo para pantalla agregar y editar*/
+
+form
+{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px;
+}
+
+.contenedor-formulario
+{
+    border: solid rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+
+form label
+{
+    font-size: 22px;
+}
+
+span
+{
+    color: tomato;
+}
+
+form input
+{
+    width: 100%;
+    height: 22px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+form select
+{
+    width: 100%;
+    height: 28px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contenedor-guardar
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: #2ddfa1 solid;
+    background-color: aliceblue;
+}
+
+button:hover
+{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(43, 43, 43, 0.2);
+    background-color: rgb(236, 245, 255);
+}
+
+button:active
+{
+    border: #95e7ca solid;
+}
+
+/* estilo para la pantalla de eliminar */ 
+
+.fondo-eliminar
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cerrar
+{
+    width: 30px;
+    left: 1px;
+    color: #8c8b8b;
+}
+
+.cerrar:hover
+{
+    color:  #a7a7a7;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.cerrar:active
+{
+    color:#8c8b8b;;
+}
+
+.contenedor-advertencia
+{
+    display: flex;
+    justify-content: center;
+}
+
+.confirmacion-eliminar
+{
+    text-align: center;
+}
+
+.elimnar-registro
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(230, 243, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 450px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.elimnar-registro img
+{
+    width: 110px;
+}
+
+.elimnar-registro h3
+{
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.elimnar-registro span
+{
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.boton-confirmar-eliminar
+{
+    border: tomato solid;
+}
+
+.boton-confirmar-eliminar:active
+{
+    border: rgb(253, 152, 134) solid;
+}
+
+/* estilo para el media query */
+@media (max-width: 700px)
+{
+    body
+    {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .boton_agregar
+    {
+        width: 33px;
+    }
+
+    li
+    {
+        padding-bottom: 4px;
+        padding-left: 5px;
+    }
+
+    .boton_editar, .boton_eliminar
+    {
+        width: 23px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .contenedor-boton-agregar
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenedor-elemento-listado
+    {
+        flex-direction: column;
+    }
+
+    .elemento_listado
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-elemento-listado div
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .boton_fantasma
+    {
+        display: none;
+    }
+
+    .enlace_agregar
+    {
+        display: flex;
+        justify-content: center
+    }
+
+    .titulo-inicio
+    {
+        text-align: center;
+    }
+
+    .contenedor-elemento-listado
+    {
+        margin: 5px 0;
+    }
+
+    .contenedor-sub-titulo
+    {
+        flex-direction: column;
+    }
+
+    .sub-titulo-2
+    {
+        margin-top: 10px;
+    }
+
+    form
+    {
+        margin-top: 0px;
+    }
+
+    button
+    {
+        margin-top: 0;
+        width: 70px;
+    }
+}
+
+@media (max-width: 520px)
+{
+    #contenedor-eliminar
+    {
+        width: 90%;
+    }
+
+    .contenedor-advertencia img 
+    {
+        width: 25%;
+    }
+}
+
+@media (max-width: 400px)
+{
+
+    .contenedor-formulario
+    {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .elimnar-registro
+    {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Editar registro</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="icon" href="assets/img/logo.ico">
+</head>
+<body onload="ver_editar()">
+
+    <a class="regresar" href="index.html"><svg class="regresar" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></a>
+
+    <div class="contenedor-logo">
+        <img class="logo" src="assets/img/logo.png" alt="logo">
+    </div>
+
+    <h1 class="titulo">Editar registro</h1>
+
+    <div class="contenedor-sub-titulo">
+        <h3 class="sub-titulo">Escribe los datos correspondientes al registro que deseas editar</h3>
+        <h3 class="sub-titulo-2">Campos marcados con * son obligatorios</h3>
+    </div>
+
+    <form>
+        <div class="contenedor-formulario">
+            <label for="nombre"><span>* </span>Nombre:</label>
+            <input type="text" placeholder=" Nombre..." id="nombre">
+            <br>
+
+            <label for="apellido"><span>* </span>Apellido: </label>
+            <input type="text" placeholder=" Apellido..." id="apellido">
+            <br>
+
+            <label for="fecha"><span>* </span>Fecha de nacimiento: </label>
+            <input type="text" placeholder=" Fecha..." id="fecha">
+            <br>
+
+            <label for="genero"><span>* </span>Genero: </label>
+            <select id="genero">
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+            </select>
+            <br>
+
+            <label for="nacionalidad"><span>* </span>Nacionalidad: </label>
+            <select id="nacionalidad">
+                <option value="Dominicana">Dominicana</option>
+                <option value="Haitiana">Haitiana</option>
+                <option value="Cubana">Cubana</option>
+                <option value="Puero Riquena">Puero Riquena</option>
+                <option value="Italiana">Italiana</option>
+                <option value="Rusa">Rusa</option>
+            </select>
+            <br>
+
+            <label for="direccion">Direccion: </label>
+            <input type="text" placeholder=" Direccion..." id="direccion">
+            <br>
+
+            <label for="contacto">Contacto: </label>
+            <input type="text" placeholder=" Contacto..." id="contacto">
+            <br>
+
+            <label for="matricula"><span>* </span>Matricula: </label>
+            <input type="text" placeholder=" Matricula..." id="matricula">
+            <br>
+            
+            <label for="curso"><span>* </span>Curso: </label>
+            <select id="curso">
+                <option value="1ro de bachillerato">1ro de bachillerato</option>
+                <option value="2do de bachillerato">2do de bachillerato</option>
+                <option value="3ro de bachillerato">3ro de bachillerato</option>
+                <option value="4to de bachillerato">4to de bachillerato</option>
+                <option value="5to de bachillerato">5to de bachillerato</option>
+                <option value="6to de bachillerato">6to de bachillerato</option>
+            </select>
+            <br>
+
+            <p id="confirmacion"></p>
+
+            <div class="contenedor-guardar">
+                <button type="button" onclick="editar()">Guardar</button>
+            </div>
+        </div>
+    </form>
+    
+</body>
+
+<script src="assets/js/index.js"></script>
+
+</html>
