@@ -23,7 +23,7 @@ Si quieres ver mi trabajo de forma local en tu equipo, revisa mi documentación 
     3-Abrir el archivo base_de_datos.sql
     4-Copiar el contenido y pegarlo en tu gestor de base datos
     5-Ejecuta el Query 
-    6-Confirmar que la tabla estudiantes se haya creado. 
+    6-Confirmar que la tabla 'estudiantes' se haya creado. 
 
 ## b) Ejecutar o iniciar la API
 
