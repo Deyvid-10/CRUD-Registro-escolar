@@ -28,9 +28,11 @@ Si quieres ver mi trabajo de forma local en tu equipo, revisa mi documentación 
 ## b) Ejecutar o iniciar la API
 
     1-Abre una terminal
-    2-Utilizando el cmdlet 'cd' ve a la carpeta donde se encuentra la API (ej: C:\Users\mi_usuario\Documents\CRUD-Registro-escolar\API) 
-    3-En la carpeta donde se encuentra la API ejecutar el comando de inicio de la app detallado a continuación
-    
+    2-Utilizando el cmdlet 'cd' para ir a la carpeta donde se encuentra la API (ej: cd C:\Users\mi_usuario\Documents\CRUD-Registro-escolar\API) 
+    3-En la carpeta donde se encuentra la API ejecutar el comando 'npm init -y' para instalar las dependencias del archivo 'package.json'
+    4-En la carpeta donde se encuentra la API ejecutar el comando 'node index.js' para iniciar la API
+
+### `npm init -y`
 ### `node index.js`
 
 ## c) Abrir la aplicación
