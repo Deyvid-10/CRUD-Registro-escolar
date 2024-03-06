@@ -1,6 +1,6 @@
 # CRUD Registro escolar
 
-En este CRUD busco simular un registro de estudiantes de una escuela. He creado esta página con el objetivo de ofrecer una solución efectiva y eficiente para la gestión de registros escolares, realizando las cuatro tareas de un CRUD creación de registros, lectura y visualización, actualización de registros Y eliminación de registros.
+En este CRUD busco simular un registro de estudiantes de una escuela. He creado esta página con el objetivo de ofrecer una solución efectiva y eficiente para la gestión de registros escolares, realizando las cuatro tareas de un CRUD creación de registros, lectura y visualización, actualización de registros y eliminación de registros.
 
 Si quieres ver mi trabajo de forma local en tu equipo, revisa mi documentación y sigue los pasos!
 
