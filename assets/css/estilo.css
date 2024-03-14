@@ -136,6 +136,18 @@ h2
     text-align: center;
 }
 
+#contenedor-carga
+{
+    display: flex;
+    justify-content: center;
+}
+
+#carga
+{
+    width: 350px;
+    text-align: center;
+}
+
 /* texto y botones generales */
 
 .regresar

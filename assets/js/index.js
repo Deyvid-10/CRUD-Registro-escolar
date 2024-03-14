@@ -8,6 +8,9 @@ function listado()
     // acceder al elemento donde se va ver el listado
     let listado = document.getElementById("contenedor-listado")
 
+    // elemento que muestra la carga en espera
+    let carga = document.getElementById("carga")
+
     // solicitud GET para la api
     fetch(link)
     .then(respuesta => respuesta.json())
@@ -56,6 +59,9 @@ function listado()
 
             }
         }
+
+        // quitar el indicador de carga
+        carga.style.display = "none"
     })
     .catch(error => alert(error))
 }
@@ -169,6 +175,9 @@ function ver()
         // acceder al elemento donde se va ver el listado
         let listado = document.getElementById("contenedor-listado-ver")
 
+        // elemento que muestra la carga en espera
+        let carga = document.getElementById("carga")
+
         for(s in salida[0])
         {
             // construccion del encabezado
@@ -191,8 +200,8 @@ function ver()
 
             listado.appendChild(contenedor_listado)
         }
-
-        
+        // quitar el indicador de carga
+        carga.style.display = "none"        
     })
     .catch(error => alert(error))
 }
