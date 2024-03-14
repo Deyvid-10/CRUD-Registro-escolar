@@ -10,12 +10,20 @@ const port = 3000;
 app.use(express.json())
 app.use(cors());
 
+// Codigo para las variables de entorno
+const dotenv = require('dotenv');
+const path = require('path');
+
+dotenv.config({
+  path: path.resolve(__dirname, process.env.NODE_ENV + '.env')
+});
+
 // Configuración de la conexión a la base de datos
 const conexion = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Contrasena20',
-  database: 'registro_escolar'  
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE 
 });
 
 // Conectar la base de datos
